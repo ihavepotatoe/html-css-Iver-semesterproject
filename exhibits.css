@@ -1,0 +1,167 @@
+.body {
+    width: 100vw;
+    background-color: black;
+}
+
+
+.row1exhibits {
+    display: flex;
+    flex-direction: row;
+}
+
+.vr-exhibit {
+    flex-shrink: 0;
+    background-color: #222;
+    color: white;
+    display: flex;
+    align-self: center;
+    margin-top: 3vw;
+    margin-left: 4vw;
+    flex-direction: row;
+    width: 40vw;
+    height: 50vh;
+    border-radius: 20px;
+}
+
+.vr-exhibit img {
+    width: 50%;
+    height: 100%;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+}
+
+.vr-text {
+    display: flex;
+    flex-direction: column;
+    font-size: 1.5vw;
+    text-align: center;
+}
+
+.anatomy-exhibit {
+    flex-shrink: 0;
+    background-color: #222;
+    color: white;
+    display: flex;
+    align-self: center;
+    margin-top: 3vw;
+    margin-left: 8vw;
+    flex-direction: row;
+    width: 40vw;
+    height: 50vh;
+    border-radius: 20px;
+}
+
+.anatomy-exhibit img {
+    width: 50%;
+    height: 100%;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+}
+
+.anatomy-text {
+    display: flex;
+    flex-direction: column;
+    font-size: 1.5vw;
+    text-align: center;
+}
+
+.row2exhibits {
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 2vw;
+}
+
+.giant-exhibit {
+    flex-shrink: 0;
+    background-color: #222;
+    color: white;
+    display: flex;
+    align-self: center;
+    margin-top: 3vw;
+    margin-left: 4vw;
+    flex-direction: column;
+    width: 40vw;
+    height: 50vh;
+    border-radius: 20px;
+}
+
+.giant-exhibit img {
+    width: 100%;
+    height: 100%;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+}
+
+.giant-text {
+    display: flex;
+    flex-direction: column;
+    font-size: 1.5vw;
+    text-align: center;
+}
+
+.ants-exhibit {
+    flex-shrink: 0;
+    background-color: #222;
+    color: white;
+    display: flex;
+    align-self: center;
+    margin-top: 3vw;
+    margin-left: 8vw;
+    flex-direction: column;
+    width: 40vw;
+    height: 50vh;
+    border-radius: 20px;
+}
+
+.ants-exhibit img {
+    width: 100%;
+    height: 100%;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+}
+
+.ants-text {
+    display: flex;
+    flex-direction: column;
+    font-size: 1.5vw;
+    text-align: center;
+}
+.row1exhibits h2,
+.row2exhibits h2 {
+    font-size: 1.6vw;
+}
+
+@media (max-width: 1120px) {
+    .row1exhibits,
+    .row2exhibits {
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        align-self: center;
+        justify-content: center;
+        justify-items: center;
+    }
+
+    .vr-exhibit,
+    .anatomy-exhibit,
+    .giant-exhibit,
+    .ants-exhibit {
+        width: 90vw;
+        height: auto;
+        margin-left: 4vw;
+        margin-right: auto;
+    }
+
+    .vr-exhibit p,
+    .anatomy-exhibit p,
+    .giant-exhibit p,
+    .ants-exhibit p {
+        font-size: 3.3vw;
+    }
+
+    .row1exhibits h2,
+    .row2exhibits h2 {
+        font-size: 4vw;
+    }
+}
+
