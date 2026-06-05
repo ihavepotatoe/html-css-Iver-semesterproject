@@ -1,60 +1,58 @@
 .hero {
-    position: relative;
-    width: 100vw;
-    height: 100vh;
+  position: relative;
+  width: 100vw;
+  height: 100vh;
 }
 
-
 .hero-text-mobile {
-    display: none;
+  display: none;
 }
 
 .mammoth {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  object-position: center center;
 }
 
 .hero-text {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    text-align: center;
-    color: white;
-    max-width: 50%;
-    font-size: 2vw;
-    text-shadow:
-        1px 1px 0 #000,
-       -1px 1px 0 #000,
-        1px -1px 0 #000,
-       -1px -1px 0 #000;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  color: white;
+  max-width: 50%;
+  font-size: 2vw;
+  text-shadow:
+    1px 1px 0 #000,
+    -1px 1px 0 #000,
+    1px -1px 0 #000,
+    -1px -1px 0 #000;
 }
 
 @media (max-width: 900px) {
+  .button {
+    color: white;
+    text-decoration: none;
+    background-color: rgba(34, 34, 34, 1);
+    margin-top: 2vw;
+    font-size: 2.5rem;
+  }
 
-    .button {
-        color: white;
-        text-decoration: none;
-        background-color: rgba(34, 34, 34, 1);
-        margin-top: 2vw;
-        font-size: 2.5rem;
-    }
+  .mobile-nav {
+    display: flex;
+    flex-direction: column;
+    font-size: 6vw;
+  }
 
-        .mobile-nav {
-        display: flex;
-        flex-direction: column;
-        font-size: 6vw;
-    }
+  .hero-text-pc {
+    display: none;
+  }
 
-    .hero-text-pc {
-        display: none;
-    }
-
-    .hero-text-mobile {
-        display: block;
-        font-size: 2.1rem;
-    }
-
+  .hero-text-mobile {
+    display: block;
+    font-size: 2.1rem;
+  }
 }
